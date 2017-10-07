@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Empório do Espeto</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+    <!-- SEO google -->
+    <meta name="description" content="Empório do Espeto">
+    <meta Name="robots" content="follow">
+    <meta Name="robots" content="index">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div id="pontuacao" class="navbar-fixed">
+        <nav id="navprincipal">
+            <div class="nav-wrapper container">
+                <a class="atitle">Empório do Espeto</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons grey-text">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="ancora white-text" href="#pontuacao">Pontuação Clube Fidelidade</a></li>
+                    <li><a class="ancora white-text" href="#promocao">Promoções Personalizadas</a></li>
+                    <li><a class="ancora white-text" href="#promocaovenda">Promoções de Vendas</a></li>
+                </ul>
+
+                <!--Navbar mobile-->
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="img/emporiodoespeto.png" class="responsive-img">
+                    <li><a class="ancora" href="#pontuacao" onclick="fecharModal()"><i class="left material-icons">person_pin</i>Clube Fidelidade</a></li>
+                    <li><a class="ancora" href="#promocao" onclick="fecharModal()"><i class="left material-icons">card_giftcard</i>Promoções Personalizadas</a></li>
+                    <li><a class="ancora" href="#promocaovenda" onclick="fecharModal()"><i class="left material-icons">shopping_cart</i>Promoções de Vendas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="pontuacao" class="container">
+        <div class="row rowtext">
+            <div class="col s12 m12 center-align">
+                <i class="small material-icons">star</i>
+                <h2 class="produtotit">Pontuação Clube de Fidelidade</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12 m12 l12">
+                <div class="row">
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text">
+                        <label for="icon_prefix">Nome do Cliente</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">control_point</i>
+                        <input id="icon_telephone" type="number">
+                        <label for="icon_telephone">Pontos</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">input</i>
+                        <label for="icon_telephone">Possibilidades de Resgates</label>
+                        <div class="chips"></div>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button class="btn waves-effect waves-light grey darken-2">salvar
+                        <i class="material-icons left">save</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="promocao" class="container">
+        <div class="row rowtext">
+            <div class="col s12 m12 center-align">
+                <i class="small material-icons">star</i>
+                <h2 class="produtotit">Promoções Personalizadas</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12 m12 l12">
+                <div class="row">
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text">
+                        <label for="icon_prefix">Nome do Cliente</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">exit_to_app</i>
+                        <select multiple>
+                            <option value="1">5% Budweiser 343 ml</option>
+                            <option value="2">Espeto alcatra</option>
+                            <option value="3">Espeto frango</option>
+                        </select>
+                        <label>Ofertas para você</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">local_offer</i>
+                        <input id="icon_telephone" type="text">
+                        <label for="icon_telephone">Voucher</label>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button class="btn waves-effect waves-light grey darken-2">salvar
+                        <i class="material-icons left">save</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="promocaovenda" class="container">
+        <div class="row rowtext">
+            <div class="col s12 m12 center-align">
+                <i class="small material-icons">star</i>
+                <h2 class="produtotit">Promoções de Vendas</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12 m12 l12">
+                <div class="row">
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">exit_to_app</i>
+                        <select multiple>
+                            <option value="1">5% Budweiser 343 ml</option>
+                            <option value="2">Espeto alcatra</option>
+                            <option value="3">Espeto frango</option>
+                            <option value="3">Espeto picanha</option>
+                        </select>
+                        <label>Produtos</label>
+                    </div>
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">perm_contact_calendar</i>
+                        <select multiple>
+                            <option value="1">mensal</option>
+                            <option value="2">semanal</option>
+                            <option value="3">diário</option>
+                        </select>
+                        <label>Período de Compra</label>
+                    </div>
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">attach_money</i>
+                        <select multiple>
+                            <option value="1">R$50,00</option>
+                            <option value="2">R$20,00</option>
+                            <option value="3">R$10,00</option>
+                        </select>
+                        <label>Valor mínimo de compra</label>
+                    </div>
+                    <div class="input-field col s12 m12 l12" style="margin-bottom: 34px;">
+                        <label>Enviar promoções para:</label>
+                        <p class="ppro">
+                            <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                            <label for="filled-in-box">Somente comprados no período</label>
+                        </p>
+                        <p class="ppro">
+                                <input type="checkbox" class="filled-in" id="filled-in-box"/>
+                                <label for="filled-in-box">Não comprados no período</label>
+                            </p>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button class="btn waves-effect waves-light grey darken-2">salvar
+                        <i class="material-icons left">save</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Empório do Espeto</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li>
+                            <i class="small material-icons grey-text text-lighten-3">portrait</i>
+                            <a class="modal-trigger descrodape" href="#modalcontato" class="white-text">Fale Conosco</a>
+                        </li>
+                        <li>
+                            <i class="small material-icons grey-text text-lighten-3">email</i>
+                            <label class="white-text descrodape">contato@emporiodoespeto.com.br</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="col l6 s6">
+                    <p class="pfooter">© 2017 Copyright </p>
+                    <a href="https://codeclubagencia.com.br/" target="_blank"><img src="img/codeclubbranco.png" alt="codeclub agencia"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--botao ir ao topo-->
+    <a id="buttontop" onclick="topo()" class="waves-light btn buttontop"><i class="material-icons left">expand_less</i></a>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
